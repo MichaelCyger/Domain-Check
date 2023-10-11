@@ -17,6 +17,7 @@ With the "Domain Check" script, you can easily monitor and verify domain name ad
 Additionally, our script offers a change in count feature, allowing you to efficiently compare and track changes in your domain portfolio. This feature enables you to quickly identify any discrepancies or unexpected alterations.
 
 In the email you receive, a full list of domain names in your portfolio is attached for archive and historical documentation, if needed.
+
 <img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/e4ec6737-07fa-4d92-82bd-8dfac895a689" alt="Daily Domain Check" style="padding:3px; border: 1px solid #0D50D2; width: 400px;">
 
 ## Plea to Registrars
