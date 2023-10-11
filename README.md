@@ -105,10 +105,10 @@ Q: How is security handled with this code?
 
 A: The config.php should not be accessible via the web if your website security is set up properly. The domains.php will not run unless it includes a querystring with a key you provided in the config.php. Yes, the long key can be hacked if you know the script location but the worst that can happen is the code will be run and an email will be sent to you. If you prefer, comment out on-page echo statements in the code for extra security.
 
+Q: Why not track my domains with [Watch My Domains](https://domainpunch.com/wmdpro/) or another program like that?
+
+A: Watch My Domains is a great program. But in order to track your domains, you need to input your domains and keep them updated. I wrote this script so that I don't have to update a third-party system, because inevitably I'll forget to do that.
+
 Q: I have a question not asked here. How can I reach you?
 
-
 A: [DM me on Twitter](https://twitter.com/messages/84946341-84946341), or email me at michael at webxmedia dot com.
-
-Q: Why not track my domains with [Watch My Domains](https://domainpunch.com/wmdpro/) or another program like that?
-A: Watch My Domains is a great program. But in order to track your domains, you need to input your domains and keep them updated. I wrote this script so that I don't have to update a third-party system, because inevitably I'll forget to do that.
