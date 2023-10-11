@@ -18,7 +18,7 @@ Additionally, our script offers a change in count feature, allowing you to effic
 
 In the email you receive, a full list of domain names in your portfolio is attached for archive and historical documentation, if needed.
 
-<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/e4ec6737-07fa-4d92-82bd-8dfac895a689" alt="Daily Domain Check" style="padding:3px; border: 1px solid #0D50D2; width: 400px;">
+<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/f2f97b96-d69c-441d-aed3-f720cca7ec70" alt="Daily Domain Check" style="width: 400px;">
 
 ## Plea to Registrars
 
@@ -42,7 +42,7 @@ This script was written to operate on a WordPress website, because that's what I
 
 1. Sign into your GoDaddy account, visit https://developer.godaddy.com/keys, and click the "Create New API Key" button. Name your application "Domain Check API Script" (or similar), and select "Production" for the environment.
 
-<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/34f35f7f-7f0a-4c75-85f8-5b3c2a0ac43b" alt="Create New API Key at GoDaddy" style="padding:3px; border: 1px solid #0D50D2; width: 400px;">
+<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/85a4317f-95f5-434a-9659-efcd123ea4d4" alt="Create New API Key at GoDaddy" style="width: 400px;">
 
 3. Using a file manager, on your website create a directory called "check" in the root directory (alternatively, you can create it in /wp-content/uploads/ so that it will automatically be backed-up, if you have a backup service).
 
@@ -55,7 +55,7 @@ define('ACCESS_KEY', 'XXXXXXXXXXX'); // <== This is a long series of letters all
 // GoDaddy API credentials
 define('API_KEY', 'XXXXXXXXXXX'); // <== The "Key" from step #1 above
 define('API_SECRET', 'XXXXXXXXXXX'); // <== The "Secret" from step #1 above
-define('SHOPPER_ID', 'XXXXXXXXXXX'); // <== This is your GoDaddy customer ID (aka shopper ID), upper right-hand corner of account
+define('SHOPPER_ID', 'XXXXXXXXXXX'); // <== This is your GoDaddy customer # (aka shopper ID), upper right-hand corner of account
 
 // Email settings
 define('RECIPIENT_NAME', 'Your Name');
@@ -64,7 +64,7 @@ define('SENDER_EMAIL', 'you@yourdomain.com');
 define('CODE_LOCATION', 'https://yourdomain/path/to/script/'); // <== So if you need to make changes in the future, you remember where it is
 ```
 
-<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/b8a92097-e499-468f-a743-536cbb12e642" alt="GoDaddy Shopper ID or Customer ID" style="padding:3px; border: 1px solid #0D50D2; width: 400px;">
+<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/22208fc9-c1b6-4d97-a103-10b3994b8120" alt="GoDaddy Shopper ID or Customer ID" style="width: 400px;">
 
 5. Copy the files domains.php and config.php into that directory.
 
