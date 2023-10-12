@@ -18,7 +18,8 @@ Additionally, our script offers a change in count feature, allowing you to effic
 
 In the email you receive, a full list of domain names in your portfolio is attached for archive and historical documentation, if needed.
 
-<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/f2f97b96-d69c-441d-aed3-f720cca7ec70" alt="Daily Domain Check" style="width: 400px;">
+![Daily Domain Check](https://github.com/MichaelCyger/Domain-Check/assets/121400468/7284f9b7-576f-4016-b34f-b43ec7c2cfbe)
+
 
 ## Plea to Registrars
 
@@ -42,11 +43,11 @@ This script was written to operate on a WordPress website, because that's what I
 
 1. Sign into your GoDaddy account, visit https://developer.godaddy.com/keys, and click the "Create New API Key" button. Name your application "Domain Check API Script" (or similar), and select "Production" for the environment.
 
-<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/85a4317f-95f5-434a-9659-efcd123ea4d4" alt="Create New API Key at GoDaddy" style="width: 400px;">
+![Create New API Key at GoDaddy](https://github.com/MichaelCyger/Domain-Check/assets/121400468/556dbd08-38cd-4b35-bec0-2846ff90e293)
 
-3. Using a file manager, on your website create a directory called "check" in the root directory (alternatively, you can create it in /wp-content/uploads/ so that it will automatically be backed-up, if you have a backup service).
+2. Using a file manager, on your website create a directory called "check" in the root directory (alternatively, you can create it in /wp-content/uploads/ so that it will automatically be backed-up, if you have a backup service).
 
-4. Update the config.php file with your website details:
+3. Update the config.php file with your website details:
 
 ```
 // Access setting
@@ -64,11 +65,11 @@ define('SENDER_EMAIL', 'you@yourdomain.com');
 define('CODE_LOCATION', 'https://yourdomain/path/to/script/'); // <== So if you need to make changes in the future, you remember where it is
 ```
 
-<img src="https://github.com/MichaelCyger/Domain-Check/assets/121400468/22208fc9-c1b6-4d97-a103-10b3994b8120" alt="GoDaddy Shopper ID or Customer ID" style="width: 400px;">
+![GoDaddy Shopper ID or Customer ID](https://github.com/MichaelCyger/Domain-Check/assets/121400468/6f1c2268-8a52-4d94-bd91-9ee5d90dbba6)
 
-5. Copy the files domains.php and config.php into that directory.
+4. Copy the files domains.php and config.php into that directory.
 
-6. Setup a cron job to run the domains.php script as often as you wish.
+5. Setup a cron job to run the domains.php script as often as you wish.
 
 I run it once a day at 4am so an email is waiting for me in my inbox when I wake up in the morning.
 
