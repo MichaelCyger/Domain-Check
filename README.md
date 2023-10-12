@@ -1,3 +1,5 @@
+https://twitter.com/MichaelCyger/status/1712442501871894647
+
 # Domain Check
 This script monitors your domain portfolio, notes any changes, and notifies you by email.
 
