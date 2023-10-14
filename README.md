@@ -1,7 +1,9 @@
 https://twitter.com/MichaelCyger/status/1712442501871894647
 
 # Domain Check
-This script monitors your domain portfolio, notes any changes, and notifies you by email.
+I've written a script that monitors your domain portfolio, notes any changes, and notifies you by email.
+
+You or your developer should be able to extend this code to any other registrar that offers an API (Application Programming Interface). Please be careful sharing your API key as it provides full access to your domains.
 
 ## Introduction
 Domain names are among the most valuable digital assets for companies and individuals. They represent your online presence, brand and business, they connect you to friends and customers through email and wallets, and they are often directly tied to revenue through ecommerce applications.
