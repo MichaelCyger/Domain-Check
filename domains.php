@@ -112,22 +112,26 @@ if (file_exists($localFilePath)) {
     echo "Local file exists so updating it.<br><br>";
 
     // Read previous domain list and count from local file
-    $previousData = file_get_contents($localFilePath);
-    $previousData = explode("\n", $previousData);
-    $previousDomains = array_slice($previousData, 0, -1);
-    $previousCount = end($previousData);
-
-    // Compare previous and current domain counts
-    $totalCountDifference = $totalCount - $previousCount;
-    echo "The difference in active domain names in your account since last run: " . number_format($totalCountDifference) . "<br><br>";
-
-    // Write current domain list and count to local file
-    file_put_contents($localFilePath, implode("\n", $domains) . "\n" . $totalCount);
-    if (file_put_contents($localFilePath, implode("\n", $domains) . "\n" . $totalCount) !== false) {
-        echo "File created and updated successfully.<br><br>";
-    } else {
-        echo "Failed to create or update the file.<br><br>";
-    }
+	$previousData = file_get_contents($localFilePath);
+	$previousData = explode("\n", $previousData);
+	$previousDomains = array_slice($previousData, 0, -1);
+	$previousCount = end($previousData);
+	
+	// Compare previous and current domain lists
+	$addedDomains = array_diff($domains, $previousDomains);
+	$removedDomains = array_diff($previousDomains, $domains);
+	
+	// Compare previous and current domain counts
+	$totalCountDifference = $totalCount - $previousCount;
+	echo "The difference in active domain names in your account since last run: " . number_format($totalCountDifference) . "<br><br>";
+	
+	// Write current domain list and count to local file
+	file_put_contents($localFilePath, implode("\n", $domains) . "\n" . $totalCount);
+	if (file_put_contents($localFilePath, implode("\n", $domains) . "\n" . $totalCount) !== false) {
+		echo "File created and updated successfully.<br><br>";
+	} else {
+		echo "Failed to create or update the file.<br><br>";
+	}
 
     // Send email if there is a discrepancy
     $subject = 'Daily Domain Check: ' . date('m/d/Y');
